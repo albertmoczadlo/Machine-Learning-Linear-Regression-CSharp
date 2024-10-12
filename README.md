@@ -280,3 +280,20 @@ Obliczanie sum:
       
       Naciśnij dowolny klawisz, aby zakończyć.
 
+## 4. Uruchomienie Aplikacji
+
+1. **Kompilacja:**
+   - Upewnij się, że wszystkie pliki są zapisane.
+   - Naciśnij Ctrl + Shift + B lub wybierz Kompiluj > Kompiluj rozwiązanie.
+
+2. **Uruchomienie:**
+   - Naciśnij F5 lub kliknij Start.
+   - W konsoli zostaną wyświetlone obliczenia i prośba o podanie wydajności maszyny.
+
+3. **Przykładowe Wejście:**
+   - Podaj wartość, np. `82`.
+   - Program wyświetli przewidywaną produkcję wraz z wcześniejszymi obliczeniami.
+
+## 5. Podsumowanie
+
+W projekcie zademonstrowaliśmy, jak zaimplementować prosty model regresji liniowej w języku C# z wykorzystaniem technologii .NET, uwzględniając szczegółowe obliczenia matematyczne. Dzięki temu można lepiej zrozumieć, jak działa regresja liniowa od strony matematycznej i jak przekłada się to na kod.
