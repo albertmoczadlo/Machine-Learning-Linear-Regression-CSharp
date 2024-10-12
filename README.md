@@ -98,3 +98,18 @@ Liczba obserwacji: `n = 5`
       
          Mianownik = (161,250) - (160,000) = 1,250
 
+Obliczamy `a`:
+
+      a = 2,500 / 1,250 = 2
+
+
+#### Krok 3: Obliczenie Wyrazu Wolnego `b`
+
+Wzór:
+
+      b = [Σy_i - a * Σx_i] / n
+
+
+Podstawiamy wartości:
+
+     b = [800 - 2 * 400] / 5 = (800 - 800) / 5 = 0    
