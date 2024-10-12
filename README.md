@@ -6,7 +6,7 @@
 
 Celem tego projektu jest zademonstrowanie, jak zaimplementować **prosty model uczenia maszynowego** w języku C# z wykorzystaniem technologii .NET. Skupimy się na **regresji liniowej** jako przykładzie uczenia nadzorowanego. Naszym zadaniem będzie przewidywanie dziennej produkcji na podstawie wydajności maszyny.
 
-**Repozytorium GitHub:** [Machine-Learning-Linear-Regression-CSharp](https://github.com/TwojNickGitHub/Machine-Learning-Linear-Regression-CSharp)
+**Repozytorium GitHub:** [Machine-Learning-Linear-Regression-CSharp](https://github.com/albertmoczadlo/Machine-Learning-Linear-Regression-CSharp)
 
 ---
 
