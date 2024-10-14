@@ -157,14 +157,7 @@ Przewidujemy produkcję dla wydajności maszyny `x = 82%`:
 Poniżej przedstawiamy pełny kod źródłowy aplikacji z uwzględnieniem obliczeń.
 
 ```csharp
-         using System;
-         
-         namespace MachineLearningLinearRegressionCSharp
-         {
-             class Program
-             {
-                 static void Main(string[] args)
-                 {
+       
                      // Dane treningowe
                      double[] x = { 70, 75, 80, 85, 90 }; // Wydajność maszyny (%)
                      double[] y = { 140, 150, 160, 170, 180 }; // Produkcja (jednostki)
@@ -233,9 +226,6 @@ Poniżej przedstawiamy pełny kod źródłowy aplikacji z uwzględnieniem oblicz
          
                      Console.WriteLine("\nNaciśnij dowolny klawisz, aby zakończyć.");
                      Console.ReadKey();
-                 }
-             }
-         }
 ```
 
 ## Wyjaśnienie Kodu
