@@ -36,6 +36,7 @@ W naszym przypadku chcemy przewidzieć dzienną **produkcję** na podstawie **wy
 
 ## 2. Regresja Liniowa - Wyjaśnienie Matematyczne
 
+
 Regresja liniowa to technika statystyczna służąca do modelowania zależności między zmienną zależną `y` a zmienną niezależną `x`. Model regresji liniowej ma postać:
 
       y = a * x + b
@@ -127,6 +128,7 @@ Otrzymany model:
 
 #### Krok 5: Predykcja
 
+
 Przewidujemy produkcję dla wydajności maszyny `x = 82%`:
 
       y = 2 * 82 + 0 = 164 jednostek
@@ -135,6 +137,7 @@ Przewidujemy produkcję dla wydajności maszyny `x = 82%`:
 ---
 
 ## 3. Implementacja w C#
+
 
 ### Przygotowanie Projektu
 
@@ -285,6 +288,7 @@ Poniżej przedstawiamy pełny kod źródłowy aplikacji z uwzględnieniem oblicz
 
 ## 4. Uruchomienie Aplikacji
 
+
 1. **Kompilacja:**
    - Upewnij się, że wszystkie pliki są zapisane.
    - Naciśnij Ctrl + Shift + B lub wybierz Kompiluj > Kompiluj rozwiązanie.
@@ -299,9 +303,11 @@ Poniżej przedstawiamy pełny kod źródłowy aplikacji z uwzględnieniem oblicz
 
 ## 5. Podsumowanie
 
+
 W projekcie zademonstrowaliśmy, jak zaimplementować prosty model regresji liniowej w języku C# z wykorzystaniem technologii .NET, uwzględniając szczegółowe obliczenia matematyczne. Dzięki temu można lepiej zrozumieć, jak działa regresja liniowa od strony matematycznej i jak przekłada się to na kod.
 
 ## 6. Materiały Dodatkowe
+
 
 ### Dokumentacja .NET:
 - [Oficjalna dokumentacja .NET](https://docs.microsoft.com/dotnet/)
