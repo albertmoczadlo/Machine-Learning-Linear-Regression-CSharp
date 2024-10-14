@@ -1,10 +1,13 @@
-﻿// Dane treningowe
+﻿
+
+// Dane treningowe
 double[] x = { 70, 75, 80, 85, 90 }; // Wydajnośc maszyny (%)
 double[] y = { 140, 150, 160, 170, 180 }; // Produkcja (jednostki)
 
 int n = x.Length;
 
 // Obliczanie sum potrzebnych do wzorów
+
 double sumX = 0;
 double sumY = 0;
 double sumX2 = 0;
@@ -45,6 +48,12 @@ Console.WriteLine($"b = ({sumY} - {a} * {sumX}) / {n} = {b}");
 // Wyświetlanie modelu regresji
 Console.WriteLine($"\nModel regresji liniowej:");
 Console.WriteLine($"y = {a}x + {b}");
+
+//Generowany wykres
+var plt = new ScottPlot.Plot(600, 400);
+
+// Punkty danych
+plt.AddScatter(x, y, color: System.Drawing.Color.Blue, label: "Dane treningowe");
 
 // Funkcja predykcji
 double Predict(double machineEfficiency)
