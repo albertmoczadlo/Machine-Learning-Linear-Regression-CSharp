@@ -335,9 +335,4 @@ Jeśli masz pytania lub potrzebujesz pomocy, możesz się ze mną skontaktować 
 ## Pliki w Repozytorium:
 - **Machine-Learning-Linear-Regression-CSharp/Program.cs** – implementacja z uwzględnieniem obliczeń matematycznych.
 - **README.md** – dokumentacja projektu.
-
-Kontakt:
-
-Jeśli masz pytania lub potrzebujesz pomocy, możesz się ze mną skontaktować przez GitHub lub e-mail: albertmoczadlo@gmail.com
-
 Dziękuję za zainteresowanie projektem!
