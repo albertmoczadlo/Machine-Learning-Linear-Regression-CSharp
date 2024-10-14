@@ -38,7 +38,7 @@ W naszym przypadku chcemy przewidzieć dzienną **produkcję** na podstawie **wy
 
 Regresja liniowa to technika statystyczna służąca do modelowania zależności między zmienną zależną `y` a zmienną niezależną `x`. Model regresji liniowej ma postać:
 
-y = a * x + b
+      y = a * x + b
 
 Gdzie:
 
@@ -70,12 +70,16 @@ Liczba obserwacji: `n = 5`
       
       2. Suma iloczynów `x_i * y_i`:
       
-         Σx_i * y_i = (70 * 140) + (75 * 150) + (80 * 160) + (85 * 170) + (90 * 180) = 9,800 + 11,250 + 12,800 + 14,450 + 16,200 = 64,500
+         Σx_i * y_i = (70 * 140) + (75 * 150) + (80 * 160) + (85 * 170) + (90 * 180) 
+                    = 9,800 + 11,250 + 12,800 + 14,450 + 16,200 
+                    = 64,500
 
 
       3. Suma kwadratów `x_i^2`:
       
-         Σx_i^2 = 70^2 + 75^2 + 80^2 + 85^2 + 90^2 = 4,900 + 5,625 + 6,400 + 7,225 + 8,100 = 32,250
+         Σx_i^2 = 70^2 + 75^2 + 80^2 + 85^2 + 90^2 
+                = 4,900 + 5,625 + 6,400 + 7,225 + 8,100 
+                = 32,250
 
 
 #### Krok 2: Obliczenie Współczynnika `a`
@@ -250,9 +254,7 @@ Poniżej przedstawiamy pełny kod źródłowy aplikacji z uwzględnieniem oblicz
 
 ### Przykładowe Wyjście:
 
-Obliczanie sum:
-
-     Obliczanie sum:
+      Obliczanie sum:
       i=1: x=70, y=140, x*y=9800, x^2=4900
       i=2: x=75, y=150, x*y=11250, x^2=5625
       i=3: x=80, y=160, x*y=12800, x^2=6400
@@ -279,6 +281,7 @@ Obliczanie sum:
       Przewidywana produkcja: 164 jednostek
       
       Naciśnij dowolny klawisz, aby zakończyć.
+
 
 ## 4. Uruchomienie Aplikacji
 
@@ -311,17 +314,17 @@ W projekcie zademonstrowaliśmy, jak zaimplementować prosty model regresji lini
 - *Uczenie Maszynowe z językiem C#* – Seyed M. M. Taheri
 - *Statystyka w analizie danych z użyciem języka C#* – Marek Wójtowicz
 
-Licencja:
+## Licencja
 
 Ten projekt jest udostępniony na licencji MIT. Możesz go dowolnie modyfikować i udostępniać.
 
-Autor:
+## Autor
 
-Albert Moczadło
+[Albert Moczadło](https://github.com/albertmoczadlo)
 
-## Zachęcam do współpracy!
+## Kontakt
 
-Jeśli masz pomysły na ulepszenie tego projektu lub znalazłeś błąd, nie wahaj się otworzyć **Issue** lub przesłać **Pull Request**.
+Jeśli masz pytania lub potrzebujesz pomocy, możesz się ze mną skontaktować przez GitHub lub e-mail: [albertmoczadlo@gmail.com](mailto:albertmoczadlo@gmail.com)
 
 ## Pliki w Repozytorium:
 - **Machine-Learning-Linear-Regression-CSharp/Program.cs** – implementacja z uwzględnieniem obliczeń matematycznych.
@@ -332,5 +335,3 @@ Kontakt:
 Jeśli masz pytania lub potrzebujesz pomocy, możesz się ze mną skontaktować przez GitHub lub e-mail: albertmoczadlo@gmail.com
 
 Dziękuję za zainteresowanie projektem!
-
-Jeśli potrzebujesz dalszej pomocy lub masz dodatkowe pytania, daj mi znać!
