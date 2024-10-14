@@ -297,3 +297,32 @@ Obliczanie sum:
 ## 5. Podsumowanie
 
 W projekcie zademonstrowaliśmy, jak zaimplementować prosty model regresji liniowej w języku C# z wykorzystaniem technologii .NET, uwzględniając szczegółowe obliczenia matematyczne. Dzięki temu można lepiej zrozumieć, jak działa regresja liniowa od strony matematycznej i jak przekłada się to na kod.
+
+## 6. Materiały Dodatkowe
+
+### Dokumentacja .NET:
+- [Oficjalna dokumentacja .NET](https://docs.microsoft.com/dotnet/)
+
+### Kursy i Tutoriale:
+- [Podstawy programowania w C#](https://learn.microsoft.com/dotnet/csharp/)
+- [Wprowadzenie do uczenia maszynowego](https://learn.microsoft.com/dotnet/machine-learning/)
+
+### Książki:
+- *Uczenie Maszynowe z językiem C#* – Seyed M. M. Taheri
+- *Statystyka w analizie danych z użyciem języka C#* – Marek Wójtowicz
+
+Licencja:
+
+Ten projekt jest udostępniony na licencji MIT. Możesz go dowolnie modyfikować i udostępniać.
+
+Autor:
+
+Albert Moczadło
+
+## Zachęcam do współpracy!
+
+Jeśli masz pomysły na ulepszenie tego projektu lub znalazłeś błąd, nie wahaj się otworzyć **Issue** lub przesłać **Pull Request**.
+
+## Pliki w Repozytorium:
+- **Machine-Learning-Linear-Regression-CSharp/Program.cs** – implementacja z uwzględnieniem obliczeń matematycznych.
+- **README.md** – dokumentacja projektu.
