@@ -336,8 +336,6 @@ This project is released under the MIT License. You are free to modify and distr
 
 [Albert Moczadło](https://github.com/albertmoczadlo)
 
-## Kontakt
-
 If you have any questions or need help, you can contact me through GitHub or email: [albertmoczadlo@gmail.com](mailto:albertmoczadlo@gmail.com)
 
 ## Files in the Repository:
