@@ -292,40 +292,45 @@ Below is the full source code of the application, including calculations.
 ## 4. Running the Application
 
 
-1. **Kompilacja:**
-   - Upewnij się, że wszystkie pliki są zapisane.
-   - Naciśnij Ctrl + Shift + B lub wybierz Kompiluj > Kompiluj rozwiązanie.
+1. **Compilation:**
+   - Ensure all files are saved.
+   - Press Ctrl + Shift + B or select Build > Build Solution.
 
-2. **Uruchomienie:**
-   - Naciśnij F5 lub kliknij Start.
-   - W konsoli zostaną wyświetlone obliczenia i prośba o podanie wydajności maszyny.
+2. **Execution:**
+   - Press F5 or click Start.
+   - The console will display calculations and prompt for machine efficiency.
 
-3. **Przykładowe Wejście:**
-   - Podaj wartość, np. `82`.
-   - Program wyświetli przewidywaną produkcję wraz z wcześniejszymi obliczeniami.
+3. **Sample Input:**
+   - Enter a value, e.g. `82`.
+   - The program will display the predicted production along with previous calculations.
+     
 
-## 5. Podsumowanie
-
-
-W projekcie zademonstrowaliśmy, jak zaimplementować prosty model regresji liniowej w języku C# z wykorzystaniem technologii .NET, uwzględniając szczegółowe obliczenia matematyczne. Dzięki temu można lepiej zrozumieć, jak działa regresja liniowa od strony matematycznej i jak przekłada się to na kod.
-
-## 6. Materiały Dodatkowe
+## 5. Summary
 
 
-### Dokumentacja .NET:
-- [Oficjalna dokumentacja .NET](https://docs.microsoft.com/dotnet/)
+In this project, we demonstrated how to implement a simple linear regression model in C# using .NET technology, including detailed mathematical calculations. This helps to better understand how linear regression works mathematically and how it translates into code.
 
-### Kursy i Tutoriale:
-- [Podstawy programowania w C#](https://learn.microsoft.com/dotnet/csharp/)
-- [Wprowadzenie do uczenia maszynowego](https://learn.microsoft.com/dotnet/machine-learning/)
 
-### Książki:
-- *Uczenie Maszynowe z językiem C#* – Seyed M. M. Taheri
-- *Statystyka w analizie danych z użyciem języka C#* – Marek Wójtowicz
+## 6. Additional Resources
 
-## Licencja
 
-Ten projekt jest udostępniony na licencji MIT. Możesz go dowolnie modyfikować i udostępniać.
+### .NET Documentation:
+
+- [Official .NET Documentation](https://docs.microsoft.com/dotnet/)
+
+### Courses and Tutorials:
+
+- [C# Fundamentals](https://learn.microsoft.com/dotnet/csharp/)
+- [Introduction to Machine Learning](https://learn.microsoft.com/dotnet/machine-learning/)
+
+### Books:
+
+- *Machine Learning Using C# – Seyed M. M. Taheri
+- *Statistics in Data Analysis Using C# – Marek Wójtowicz
+
+## License
+
+This project is released under the MIT License. You are free to modify and distribute it.
 
 ## Autor
 
@@ -333,9 +338,16 @@ Ten projekt jest udostępniony na licencji MIT. Możesz go dowolnie modyfikować
 
 ## Kontakt
 
-Jeśli masz pytania lub potrzebujesz pomocy, możesz się ze mną skontaktować przez GitHub lub e-mail: [albertmoczadlo@gmail.com](mailto:albertmoczadlo@gmail.com)
+If you have any questions or need help, you can contact me through GitHub or email: [albertmoczadlo@gmail.com](mailto:albertmoczadlo@gmail.com)
 
-## Pliki w Repozytorium:
-- **Machine-Learning-Linear-Regression-CSharp/Program.cs** – implementacja z uwzględnieniem obliczeń matematycznych.
-- **README.md** – dokumentacja projektu.
-Dziękuję za zainteresowanie projektem!
+## Files in the Repository:
+
+- **Machine-Learning-Linear-Regression-CSharp/Program.cs – implementation including mathematical calculations.
+- **README.md** – project documentation.
+
+## Contact
+
+If you have questions or need assistance, you can contact me via GitHub or email: albertmoczadlo@gmail.com
+
+Thank you for your interest in the project!
+
