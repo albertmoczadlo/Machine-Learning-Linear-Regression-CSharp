@@ -1,116 +1,128 @@
-# Przewidywanie Produkcji na Podstawie Wydajności Maszyny za pomocą Regresji Liniowej w C# (.NET)
+# Predicting Production Based on Machine Efficiency Using Linear Regression in C# (.NET)
 
 ---
 
-## Wprowadzenie
+## Introduction
 
-Celem tego projektu jest zademonstrowanie, jak zaimplementować **prosty model uczenia maszynowego** w języku C# z wykorzystaniem technologii .NET. Skupimy się na **regresji liniowej** jako przykładzie uczenia nadzorowanego. Naszym zadaniem będzie przewidywanie dziennej produkcji na podstawie wydajności maszyny.
+The goal of this project is to demonstrate how to implement a **simple machine learning model** in C# using .NET technology. We will focus on **linear regression** as an example of supervised learning. Our task is to predict daily production based on machine efficiency.
 
-**Repozytorium GitHub:** [Machine-Learning-Linear-Regression-CSharp](https://github.com/albertmoczadlo/Machine-Learning-Linear-Regression-CSharp)
-
----
-
-## Spis Treści
-
-1. [Wprowadzenie do Uczenia Nadzorowanego](#1-wprowadzenie-do-uczenia-nadzorowanego)
-2. [Regresja Liniowa - Wyjaśnienie Matematyczne](#2-regresja-liniowa---wyjaśnienie-matematyczne)
-   - [Dane Treningowe](#dane-treningowe)
-   - [Obliczenia Krok po Kroku](#obliczenia-krok-po-kroku)
-3. [Implementacja w C#](#3-implementacja-w-c)
-   - [Przygotowanie Projektu](#przygotowanie-projektu)
-   - [Kod Źródłowy](#kod-źródłowy)
-   - [Wyjaśnienie Kodu](#wyjaśnienie-kodu)
-4. [Uruchomienie Aplikacji](#4-uruchomienie-aplikacji)
-5. [Podsumowanie](#5-podsumowanie)
-6. [Materiały Dodatkowe](#6-materiały-dodatkowe)
+**GitHub Repository:** [Machine-Learning-Linear-Regression-CSharp](https://github.com/albertmoczadlo/Machine-Learning-Linear-Regression-CSharp)
 
 ---
 
-## 1. Wprowadzenie do Uczenia Nadzorowanego
+## Table of Contents
 
-**Uczenie nadzorowane** to metoda uczenia maszynowego, w której model jest trenowany na zestawie danych wejściowych (**cechy**) z odpowiadającymi im znanymi wynikami (**etykiety**). Model uczy się zależności między cechami a etykietami, aby przewidywać wyniki dla nowych danych.
-
-W naszym przypadku chcemy przewidzieć dzienną **produkcję** na podstawie **wydajności maszyny**.
+1. [Introduction to Supervised Learning](#1-introduction-to-supervised-learning)
+2. [Linear Regression - Mathematical Explanation](#2-linear-regression---mathematical-explanation)
+   - [Training Data](#training-data)
+   - [Step-by-Step Calculations](#step-by-step-calculations)
+3. [Implementation in C#](#3-implementation-in-c)
+   - [Project Setup](#project-setup)
+   - [Source Code](#source-code)
+   - [Code Explanation](#code-explanation)
+4. [Running the Application](#4-running-the-application)
+5. [Summary](#5-summary)
+6. [Additional Resources](#6-additional-resources)
+7. [License](#license)
+8. [Author](#author)
+9. [Encouragement to Collaborate](#encouragement-to-collaborate)
+10. [Files in the Repository](#files-in-the-repository)
+11. [Contact](#contact)
 
 ---
 
-## 2. Regresja Liniowa - Wyjaśnienie Matematyczne
+## 1. Introduction to Supervised Learning
 
+**Supervised learning** is a machine learning method where a model is trained on a dataset containing input features (**features**) with corresponding known outputs (**labels**). The model learns the relationship between the features and labels to predict outcomes for new data.
 
-Regresja liniowa to technika statystyczna służąca do modelowania zależności między zmienną zależną `y` a zmienną niezależną `x`. Model regresji liniowej ma postać:
+In our case, we want to predict daily **production** based on **machine efficiency**.
+
+---
+
+## 2. Linear Regression - Mathematical Explanation
+
+Linear regression is a statistical technique used to model the relationship between a dependent variable `y` and an independent variable `x`. The linear regression model is defined as:
 
       y = a * x + b
 
-Gdzie:
 
-- `y` – przewidywana wartość (np. produkcja).
-- `x` – wartość wejściowa (np. wydajność maszyny).
-- `a` – współczynnik kierunkowy (**nachylenie prostej**).
-- `b` – wyraz wolny (**punkt przecięcia z osią** `y`).
+Where:
 
-### Dane Treningowe
+- `y` – the predicted value (e.g., production).
+- `x` – the input value (e.g., machine efficiency).
+- `a` – the slope coefficient (**slope of the line**).
+- `b` – the intercept (**point where the line crosses the y-axis**).
 
-| Numer obserwacji `i` | Wydajność maszyny `x_i` (%) | Produkcja `y_i` (jednostki) |
-|----------------------|------------------------------|-----------------------------|
-| 1                    | 70                           | 140                         |
-| 2                    | 75                           | 150                         |
-| 3                    | 80                           | 160                         |
-| 4                    | 85                           | 170                         |
-| 5                    | 90                           | 180                         |
+### Training Data
 
-Liczba obserwacji: `n = 5`
+| Observation `i` | Machine Efficiency `x_i` (%) | Production `y_i` (units) |
+|-----------------|------------------------------|--------------------------|
+| 1               | 70                           | 140                      |
+| 2               | 75                           | 150                      |
+| 3               | 80                           | 160                      |
+| 4               | 85                           | 170                      |
+| 5               | 90                           | 180                      |
 
-### Obliczenia Krok po Kroku
+Number of observations: `n = 5`
 
-#### Krok 1: Obliczenie Sum
+### Step-by-Step Calculations
 
-      1. Sumy wartości `x_i` i `y_i`:
+#### Step 1: Calculating Sums
+
+1. **Sum of `x_i` and `y_i` values:**
       
          Σx_i = 70 + 75 + 80 + 85 + 90 = 400
          Σy_i = 140 + 150 + 160 + 170 + 180 = 800
       
-      2. Suma iloczynów `x_i * y_i`:
       
+2. **Sum of products `x_i * y_i`:**
+   
          Σx_i * y_i = (70 * 140) + (75 * 150) + (80 * 160) + (85 * 170) + (90 * 180) 
                     = 9,800 + 11,250 + 12,800 + 14,450 + 16,200 
                     = 64,500
 
 
-      3. Suma kwadratów `x_i^2`:
+
+3. **Sum of squares `x_i^2`:**
       
          Σx_i^2 = 70^2 + 75^2 + 80^2 + 85^2 + 90^2 
                 = 4,900 + 5,625 + 6,400 + 7,225 + 8,100 
                 = 32,250
 
 
-#### Krok 2: Obliczenie Współczynnika `a`
 
-      Wzór:
+#### Step 2: Calculating Coefficient `a`
+
+Formula:
       
          a = [n * Σx_i * y_i - Σx_i * Σy_i] / [n * Σx_i^2 - (Σx_i)^2]
       
       
-      Podstawiamy obliczone wartości:
+      
+      Substituting the calculated values:
       
          a = [5 * 64,500 - 400 * 800] / [5 * 32,250 - 400^2]
       
-      Obliczamy licznik:
+      
+      Calculating the numerator:
       
          Licznik = (322,500) - (320,000) = 2,500
 
 
-      Obliczamy mianownik:
       
-         Mianownik = (161,250) - (160,000) = 1,250
+      Calculating the denominator:
+      
+         Denominator = (161,250) - (160,000) = 1,250
 
-Obliczamy `a`:
+
+Calculating `a`:
 
       a = 2,500 / 1,250 = 2
+      
 
+#### Step 3: Calculating Intercept `b`
 
-#### Krok 3: Obliczenie Wyrazu Wolnego `b`
-
-Wzór:
+Formula:
 
       b = [Σy_i - a * Σx_i] / n
 
