@@ -257,7 +257,7 @@ Below is the full source code of the application, including calculations.
 - **User Interaction:**
   - The program prompts the user to enter the machine efficiency.
   - Using the Predict function, we calculate and display the predicted production.
-  - 
+  
 ### Sample Output:
 
       Calculating sums:
